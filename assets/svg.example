@@ -1,0 +1,11 @@
+<svg width="320" height="320">
+  <circle cx="160" cy="160" r="160" />
+  <ellipse cx="75" cy="75" rx="20" ry="5" stroke="red"/>
+  <line x1="160" y1="160" x2="21.4" y2="80" />
+  <polygon points="50 160 55 180 70 180 60 190 65 205 50"
+           stroke="green"/>
+  <g class="tetrahedron" transform="rotate(0, 160, 160)">
+    <path d="M 0 60 L 30 0 L 60 60 Z" stroke="#0074D9"/>
+    <path d="M 12 96 L 215 192 L 10 20 Z" fill="#0074D9"/>
+  </g>
+</svg>
