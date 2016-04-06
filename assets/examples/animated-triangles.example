@@ -1,0 +1,16 @@
+<svg width="300" height="300">
+
+  <AnimatedTriangle verts={ pulseVerts[3] }
+                    color="#FF8EAC"
+                    delay={ 0 } />
+  <AnimatedTriangle verts={ pulseVerts[2] }
+                    color="#FF5681"
+                    delay={ 60 } />
+  <AnimatedTriangle verts={ pulseVerts[1] }
+                    color="#FF3B6C"
+                    delay={ 110 } />
+  <AnimatedTriangle verts={ pulseVerts[0] }
+                    color="#FF1F58"
+                    delay={ 220 } />
+
+</svg>

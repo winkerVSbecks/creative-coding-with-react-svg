@@ -1,0 +1,18 @@
+var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+var svgNS = svg.namespaceURI;
+
+var p = document.createElementNS(svgNS, 'path');
+
+var pathData = [
+  'M', 0,  60,
+  'L', 30, 0,
+  'L', 60, 60,
+  'Z',
+].join(' ');
+
+p.setAttribute('d', pathData);
+p.setAttribute('fill', '#0074D9');
+
+svg.appendChild(p);
+
+document.body.appendChild(svg);
