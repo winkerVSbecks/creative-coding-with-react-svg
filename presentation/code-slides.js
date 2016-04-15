@@ -3,6 +3,8 @@ import CodeSlide from 'spectacle-code-slide';
 import Triangle from '../assets/interactives/triangle.js';
 import AnimatedTriangle from
   '../assets/interactives/animated-triangle.js';
+import ClickableTriangleApp from
+  '../assets/interactives/clickable-triangle.js';
 
 export const svgSyntax = (
   <CodeSlide
@@ -48,7 +50,7 @@ export const reactComponent = (
       { loc: [19, 24], note: 'Vertices of The △: 3 (x,y) pairs'  },
       { loc: [6, 12], note: 'Generate the path data'  },
       { loc: [13, 16], note: 'Compose the path' },
-      { loc: [25, 33], title: 'Bootstrap the application' },
+      { loc: [25, 33] },
     ]}/>
 );
 
@@ -168,5 +170,41 @@ export const svgFromJS = (
       { loc: [16, 18], note: `Set attributes for the path` },
       { loc: [19, 20], note: `Attach the path to the SVG` },
       { loc: [21, 22], note: `Attach the SVG to the DOM` },
+    ]}/>
+);
+
+export const clickableTriangleInteractive = (
+  <ClickableTriangleApp />
+);
+
+export const clickableTriangle = (
+  <CodeSlide
+    transition={['slide']}
+    lang="jsx"
+    code={ require('raw!../assets/examples/clickable-triangle.example') }
+    ranges={[
+      { loc: [], title: `Clickable Triangle` },
+      { loc: [0, 3], note: `handleClick property` },
+      { loc: [3, 16], note: `same as before` },
+      { loc: [21, 22], note: `Attach click handler` },
+      { loc: [18, 22] },
+    ]}/>
+);
+
+export const clickableTriangleContainer = (
+  <CodeSlide
+    transition={['slide']}
+    lang="jsx"
+    textSize={ '1.6rem' }
+    code={ require('raw!../assets/examples/clickable-triangle-container.example') }
+    ranges={[
+      { loc: [], title: `Container` },
+      { loc: [0, 1], note: `Stateful Component` },
+      { loc: [2, 9], note: `Define the state` },
+      { loc: [33, 38], note: `Random color generator` },
+      { loc: [10, 19] },
+      { loc: [15, 16], note: `Pass the click handler down` },
+      { loc: [20, 25] },
+      { loc: [28, 32] },
     ]}/>
 );

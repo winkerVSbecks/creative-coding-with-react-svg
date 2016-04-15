@@ -16,7 +16,7 @@ import {
 } from 'spectacle';
 import preloader from 'spectacle/lib/utils/preloader';
 import theme from './theme';
-import { codePen, bgColorSlide, slide, demoSlide, imageSlide } from './utils';
+import { bgColorSlide, slide, demoSlide, imageSlide } from './utils';
 import * as slides from './slides';
 import * as emoji from './emoji';
 import * as codeSlides from './code-slides';
@@ -52,6 +52,7 @@ const images = {
   pizzaTheorem: require('../assets/pizza-theorem.gif'),
   truncation: require('../assets/truncation.gif'),
   oam: require('../assets/oam.gif'),
+  vectorField: require('../assets/vector-field.gif'),
 };
 
 preloader(images);
@@ -88,7 +89,7 @@ export default class Presentation extends Component {
             <Heading size={4} margin="0 0 2rem 0" textAlign="left">
               p5.js
             </Heading>
-            { codePen('EKwVdZ', 400) }
+            <Image src={ images.vectorField } />
           </Slide>
           <Slide>
             <Heading size={6} textAlign="left">A Triangle Every Day <small style={{ color: clrs.gray }}>» p5.js, paper.js, etc.</small></Heading>
@@ -243,12 +244,12 @@ export default class Presentation extends Component {
             </Heading>
           </Slide>
           {
-            demoSlide(images.fermatPoint, 'Fermat Point',
-              'http://winkervsbecks.github.io/fermat-point')
-          }
-          {
             demoSlide(images.truncation, 'Truncation',
               'http://winkervsbecks.github.io/truncation')
+          }
+          {
+            demoSlide(images.fermatPoint, 'Fermat Point',
+              'http://winkervsbecks.github.io/fermat-point')
           }
           <Slide>
             { emoji.objects }
@@ -282,26 +283,32 @@ export default class Presentation extends Component {
                   Discrete <span style={{ color: '#d3976e'}}>&</span><br/>Self Contained<br/>Objects
                 </Heading>
               </Fill>
-              <Fit style={ center }>
-                { emoji.plus }
-              </Fit>
-              <Fit style={ center }>
+              <Fill style={ center }>
                 <div>
-                  { emoji.chillwave(clrs.blue, 2) }
-                  <Heading size={4} textColor="blue"
+                  { emoji.chillwave('#FFCE31', 2) }
+                  <Heading size={4} textColor="#F2B200"
                     lineHeight={1.05}
                     margin="0 0 0.5rem 0">
                     Animations
                   </Heading>
-                  { emoji.chillwave(clrs.blue, 2) }
+                  { emoji.chillwave('#FFCE31', 2) }
                 </div>
-              </Fit>
+              </Fill>
             </Layout>
           </Slide>
           {
             demoSlide(images.spring, `Hooke's Law`,
               'http://winkervsbecks.github.io/hookes-law')
           }
+          <Slide bgColor="blue">
+            { emoji.click }
+            <Heading size={4} className="caps" textColor="white">
+              Interaction
+            </Heading>
+          </Slide>
+          { slide(codeSlides.clickableTriangleInteractive) }
+          { codeSlides.clickableTriangle }
+          { codeSlides.clickableTriangleContainer }
           {
             demoSlide(images.oam,
               'OAM Site – collaboration with Ainsley Wagoner',
