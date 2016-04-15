@@ -1,0 +1,6 @@
+<svg width="240" height="240">
+  <Triangle vertices={...} color="#FF3049" />
+  <Triangle vertices={...} color="#FF4167" />
+  <Triangle vertices={...} color="#FF5C7C" />
+  <Triangle vertices={...} color="#FF6C6E" />
+</svg>

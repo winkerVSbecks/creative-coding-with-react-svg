@@ -1,0 +1,13 @@
+var x = 100;
+
+function draw() {
+  background(255);
+
+  if (x < width) {
+    x = x + 1;
+  } else {
+    x = 0;
+  }
+
+  ellipse(x, height / 2, 30, 30);
+}
