@@ -134,6 +134,7 @@ export default class Presentation extends Component {
             <ListItem>Build UIs with components</ListItem>
               <ListItem>Supports SVG by default</ListItem>
               <ListItem>Separate concerns</ListItem>
+              <ListItem>Text, input elements, responsive behaviour for free</ListItem>
             </List>
           </Slide>
           <Slide>
@@ -331,13 +332,11 @@ export default class Presentation extends Component {
           { codeSlides.clickableTriangle }
           { codeSlides.clickableTriangleContainer }
           <Slide>
-            <Heading size={4} className="caps" textColor="white">
+            <Heading size={6} textColor="blue">
               Rosette Generators by Seth Davenport
             </Heading>
-            <Layout>
-              <Fill>{ images.rosette }</Fill>
-              <Fill>{ images.rosette2 }</Fill>
-            </Layout>
+            <Image src={ images.rosette } width="400"/>
+            <Image src={ images.rosette2 } width="400"/>
           </Slide>
           {
             demoSlide(images.oam,
