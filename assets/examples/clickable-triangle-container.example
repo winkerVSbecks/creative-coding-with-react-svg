@@ -1,0 +1,37 @@
+class App extends React.Component {
+
+  constructor() {
+    super();
+    this.state = {
+      vertices: [ [0, 60], [30, 0], [60, 60] ],
+      color: getRandomColour(),
+    };
+  }
+
+  render() {
+    return (
+      <svg width="60" height="60">
+        <ClickableTriangle vertices={this.state.vertices}
+                           color={this.state.color}
+                           handleClick={this.changeColor}/>
+      </svg>
+    );
+  }
+
+  changeColor = () => {
+    this.setState({
+      color: getRandomColour(),
+    });
+  };
+
+}
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
+
+function getRandomColour() {
+  const clrs = ['#FFE200', '#34A766', '#0072BB'];
+  return clrs[Math.floor(Math.random() * clrs.length)];
+}
