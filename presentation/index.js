@@ -9,6 +9,7 @@ import {
   Heading,
   Image,
   Layout,
+  Link,
   ListItem,
   List,
   Slide,
@@ -53,6 +54,8 @@ const images = {
   truncation: require('../assets/truncation.gif'),
   oam: require('../assets/oam.gif'),
   vectorField: require('../assets/vector-field.gif'),
+  rosette: require('../assets/rosette.gif'),
+  rosette2: require('../assets/rosette2.gif'),
 };
 
 preloader(images);
@@ -126,6 +129,14 @@ export default class Presentation extends Component {
             )
           }
           <Slide>
+            <Heading>React & SVG</Heading>
+            <List>
+            <ListItem>Build UIs with components</ListItem>
+              <ListItem>Supports SVG by default</ListItem>
+              <ListItem>Separate concerns</ListItem>
+            </List>
+          </Slide>
+          <Slide>
             <Heading size={4}>SVG Artboard</Heading>
             { emoji.artboard }
           </Slide>
@@ -136,6 +147,16 @@ export default class Presentation extends Component {
           { slides.triangleOnArtboard([0, 1, 2]) }
           { slides.triangleOnArtboard([0, 1, 2, 3]) }
           { codeSlides.path }
+          <Slide>
+            { emoji.jxnblk }
+            <Heading size={6}>
+              <Link href="http://jxnblk.com/react-icons"
+                target="_blank"
+                textColor="blue">
+                jxnblk.com/react-icons
+              </Link>
+            </Heading>
+          </Slide>
           { codeSlides.reactComponent }
           { slide(codeSlides.triangle) }
           { codeSlides.composition }
@@ -309,6 +330,15 @@ export default class Presentation extends Component {
           { slide(codeSlides.clickableTriangleInteractive) }
           { codeSlides.clickableTriangle }
           { codeSlides.clickableTriangleContainer }
+          <Slide>
+            <Heading size={4} className="caps" textColor="white">
+              Rosette Generators by Seth Davenport
+            </Heading>
+            <Layout>
+              <Fill>{ images.rosette }</Fill>
+              <Fill>{ images.rosette2 }</Fill>
+            </Layout>
+          </Slide>
           {
             demoSlide(images.oam,
               'OAM Site – collaboration with Ainsley Wagoner',

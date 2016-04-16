@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Appear,
   CodePane,
   Fill,
   Fit,
@@ -241,7 +242,8 @@ function headingStyles(bgColor, color) {
 export const statefulTriangle = (
   <Slide>
     <Layout style={{ alignItems: 'stretch', height: 400 }}>
-      <div style={{ width: '33.3%', display: 'flex', flexDirection: 'column' }}>
+      <Appear style={{ width: '33.3%', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
         <Heading style={
           headingStyles('#0074D9', '#B3DCFF')
         }>State</Heading>
@@ -269,6 +271,7 @@ export const statefulTriangle = (
           '#00662C'
         </div>
       </div>
+      </Appear>
       <div style={{ width: '33.3%', display: 'flex', flexDirection: 'column' }}>
         <Heading style={
           headingStyles('#FF851B', '#662F00')

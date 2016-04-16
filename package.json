@@ -24,7 +24,7 @@
     "react-dom": "^0.14.3",
     "react-motion": "^0.4.2",
     "spectacle": "^1.0.0",
-    "spectacle-code-slide": "^0.1.9"
+    "spectacle-code-slide": "^0.1.10"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.2",
