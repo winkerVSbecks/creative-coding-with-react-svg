@@ -14,13 +14,13 @@ export const svgSyntax = (
     code={ require('raw!../assets/examples/svg.example') }
     ranges={[
       { loc: [0, 24], title: 'SVG Syntax' },
-      { loc: [0, 1], title: 'Define Your Artboard' },
-      { loc: [1, 2], title: 'Circle' },
-      { loc: [2, 3], title: 'Ellipse' },
-      { loc: [3, 4], title: 'Line'  },
-      { loc: [6, 10], title: 'Groups / Layers'  },
-      { loc: [4, 6], title: 'Polygon'  },
-      { loc: [7, 8], title: 'Paths' },
+      { loc: [0, 1], title: 'Define Your Artboard ⃞' },
+      { loc: [1, 2], title: 'Circle ⃝' },
+      { loc: [2, 3], title: 'Ellipse ⬭' },
+      { loc: [3, 4], title: 'Line ↗'  },
+      { loc: [6, 10], title: 'Groups / Layers ⟁⌾'  },
+      { loc: [4, 6], title: 'Polygon ⏢'  },
+      { loc: [7, 8], title: 'Paths ⌇︴' },
     ]}/>
 );
 
@@ -206,5 +206,20 @@ export const clickableTriangleContainer = (
       { loc: [15, 16], note: `Pass the click handler down` },
       { loc: [20, 25] },
       { loc: [28, 32] },
+    ]}/>
+);
+
+export const domFight = (
+  <CodeSlide
+    transition={['slide']}
+    textSize={ '1.6rem' }
+    lang="js"
+    code={ require('raw!../assets/examples/svg-js.example') }
+    ranges={[
+      { loc: [], title: `Manual DOM Management` },
+      { loc: [0, 4], note: 'Create nodes' },
+      { loc: [5, 11], note: 'Path definition' },
+      { loc: [12, 14], note: 'Attach def to node'  },
+      { loc: [15, 18], note: 'Make the nodes live' },
     ]}/>
 );

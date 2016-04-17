@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import clrs from './clrs';
 import {
   Appear,
+  BlockQuote,
   CodePane,
   Deck,
   Fill,
@@ -12,6 +13,7 @@ import {
   Link,
   ListItem,
   List,
+  Quote,
   Slide,
   Spectacle,
   Text,
@@ -80,7 +82,23 @@ export default class Presentation extends Component {
               Mathematically<br/>Derived Graphics
             </Heading>
           </Slide>
+          <Slide>
+            EXAMPLES
+          </Slide>
+          <Slide>
+            <BlockQuote>
+              <Quote>Create Something Expressive Instead of Something Functional</Quote>
+            </BlockQuote>
+          </Slide>
           { bgColorSlide('blue', emoji.js) }
+          <Slide>
+            <Heading size={4}>Creative Coding on the Web</Heading>
+            <List>
+              <ListItem>HTML5 Canvas</ListItem>
+              <ListItem>WebGL</ListItem>
+              <ListItem>SVG</ListItem>
+            </List>
+          </Slide>
           <Slide>
             <Heading size={6} textAlign="left">
               Ellsworth Kelly Animated <small style={{ color: clrs.gray }}>» canvas</small>
@@ -152,11 +170,6 @@ export default class Presentation extends Component {
             { emoji.artboard }
           </Slide>
           { codeSlides.svgSyntax }
-          { slides.triangleOnArtboard([]) }
-          { slides.triangleOnArtboard([0]) }
-          { slides.triangleOnArtboard([0, 1]) }
-          { slides.triangleOnArtboard([0, 1, 2]) }
-          { slides.triangleOnArtboard([0, 1, 2, 3]) }
           <Slide>
             <Heading size={3}>Path</Heading>
             <List>
@@ -165,6 +178,11 @@ export default class Presentation extends Component {
               <ListItem>Requires a Path Definition attribute <code className="bold">d</code></ListItem>
             </List>
           </Slide>
+          { slides.triangleOnArtboard([]) }
+          { slides.triangleOnArtboard([0]) }
+          { slides.triangleOnArtboard([0, 1]) }
+          { slides.triangleOnArtboard([0, 1, 2]) }
+          { slides.triangleOnArtboard([0, 1, 2, 3]) }
           { codeSlides.path }
           <Slide>
             { emoji.jxnblk }
@@ -192,7 +210,7 @@ export default class Presentation extends Component {
               textColor="blue"
               className="caps"
               margin="1rem 0">State</Heading>
-            <Text textAlign="left">Variables which define what is happening in your application.</Text>
+            <Text textAlign="left" lineHeight={1.2}>a set of variables which define what is happening in your application.</Text>
           </Slide>
           { slides.statefulTriangle }
           {
@@ -284,6 +302,7 @@ export default class Presentation extends Component {
               Don't Have to Fight the DOM
             </Heading>
           </Slide>
+          { codeSlides.domFight }
           <Slide>
             { emoji.storm }
             <Heading size={4}>
@@ -356,6 +375,7 @@ export default class Presentation extends Component {
           { slide(codeSlides.clickableTriangleInteractive) }
           { codeSlides.clickableTriangle }
           { codeSlides.clickableTriangleContainer }
+          { slide(codeSlides.clickableTriangleInteractive) }
           <Slide>
             <Heading size={6} textColor="blue">
               Rosette Generators by Seth Davenport
