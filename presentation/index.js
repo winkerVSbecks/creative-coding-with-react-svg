@@ -59,6 +59,7 @@ const images = {
   vectorField: require('../assets/vector-field.gif'),
   rosette: require('../assets/rosette.gif'),
   rosette2: require('../assets/rosette2.gif'),
+  processing: require('../assets/processing.svg'),
 };
 
 preloader(images);
@@ -82,13 +83,16 @@ export default class Presentation extends Component {
               Mathematically<br/>Derived Graphics
             </Heading>
           </Slide>
-          <Slide>
-            EXAMPLES
-          </Slide>
+          { slides.robertHodgin }
+          { slides.reza }
+          { slides.mariusWatz }
           <Slide>
             <BlockQuote>
               <Quote>Create Something Expressive Instead of Something Functional</Quote>
             </BlockQuote>
+          </Slide>
+          <Slide>
+            <Image src={ images.processing } width="25%" />
           </Slide>
           { bgColorSlide('blue', emoji.js) }
           <Slide>

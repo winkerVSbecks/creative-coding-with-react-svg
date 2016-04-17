@@ -19,6 +19,11 @@ import * as codeSlides from './code-slides';
 
 const images = {
   me: require('../assets/me.png'),
+  cracking: require('../assets/generative/Absolut-Cracking.gif'),
+  amberLayer: require('../assets/generative/AmberLayer.gif'),
+  cme04: require('../assets/generative/cme_04.jpg'),
+  cme05: require('../assets/generative/cme_05.jpg'),
+  fieldFlow: require('../assets/generative/field-flow.png'),
 };
 
 preloader(images);
@@ -74,6 +79,7 @@ export const overview = (
   <Slide>
     <Heading size={4}>Overview</Heading>
     <List>
+      <ListItem>Background</ListItem>
       <ListItem>SVG Syntax</ListItem>
       <ListItem>Composing SVGs using React</ListItem>
       <ListItem>Animations</ListItem>
@@ -299,5 +305,30 @@ export const statefulTriangle = (
         </div>
       </div>
     </Layout>
+  </Slide>
+);
+
+const imgStyle = { width: '50%', height: '50%' };
+
+export const reza = (
+  <Slide>
+    <Heading size={4}>Reza Ali</Heading>
+    <Image src={ images.amberLayer } style={imgStyle} />
+    <Image src={ images.fieldFlow } style={imgStyle} />
+  </Slide>
+);
+
+export const robertHodgin = (
+  <Slide>
+    <Heading size={4}>Robert Hodgin</Heading>
+    <Image src={ images.cme04 } style={imgStyle} />
+    <Image src={ images.cme05 } style={imgStyle} />
+  </Slide>
+);
+
+export const mariusWatz = (
+  <Slide>
+    <Heading size={4}>Marius Watz</Heading>
+    <Image src={ images.cracking } style={imgStyle} />
   </Slide>
 );
