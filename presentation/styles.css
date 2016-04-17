@@ -4,6 +4,7 @@
 }
 
 .ml2 { margin-left: 1rem; }
+.bold { font-weight: bold; }
 
 .circle {
   animation: sweep 3s ease-in-out infinite;

@@ -11,9 +11,9 @@ class App extends React.Component {
   render() {
     return (
       <svg width="60" height="60">
-        <ClickableTriangle vertices={this.state.vertices}
-                           color={this.state.color}
-                           handleClick={this.changeColor}/>
+        <Triangle vertices={this.state.vertices}
+                  color={this.state.color}
+                  handleClick={this.changeColor}/>
       </svg>
     );
   }

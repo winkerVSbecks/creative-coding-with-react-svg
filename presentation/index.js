@@ -14,6 +14,7 @@ import {
   List,
   Slide,
   Spectacle,
+  Text,
 } from 'spectacle';
 import preloader from 'spectacle/lib/utils/preloader';
 import theme from './theme';
@@ -118,6 +119,14 @@ export default class Presentation extends Component {
             )
           }
           { imageSlide(images.svg) }
+          <Slide>
+            <Heading>SVG</Heading>
+            <List>
+              <ListItem>SVG images can be created with any text editor and/or drawing apps.</ListItem>
+              <ListItem>Can be placed in HTML.</ListItem>
+              <ListItem>First class citizen of the web.</ListItem>
+            </List>
+          </Slide>
           {
             bgColorSlide(
               'blue',
@@ -131,7 +140,8 @@ export default class Presentation extends Component {
           <Slide>
             <Heading>React & SVG</Heading>
             <List>
-            <ListItem>Build UIs with components</ListItem>
+              <ListItem>A JavaScript library for building user interfaces</ListItem>
+              <ListItem>Build UIs with components</ListItem>
               <ListItem>Supports SVG by default</ListItem>
               <ListItem>Separate concerns</ListItem>
               <ListItem>Text, input elements, responsive behaviour for free</ListItem>
@@ -147,6 +157,14 @@ export default class Presentation extends Component {
           { slides.triangleOnArtboard([0, 1]) }
           { slides.triangleOnArtboard([0, 1, 2]) }
           { slides.triangleOnArtboard([0, 1, 2, 3]) }
+          <Slide>
+            <Heading size={3}>Path</Heading>
+            <List>
+              <ListItem>Create all the other basic shapes and more.</ListItem>
+              <ListItem>Lines / Arcs / Curves </ListItem>
+              <ListItem>Requires a Path Definition attribute <code className="bold">d</code></ListItem>
+            </List>
+          </Slide>
           { codeSlides.path }
           <Slide>
             { emoji.jxnblk }
@@ -167,6 +185,14 @@ export default class Presentation extends Component {
             <Heading size={4} className="caps" textColor="white">
               State Driven
             </Heading>
+          </Slide>
+          <Slide>
+            <Heading textAlign="left"
+              size={5}
+              textColor="blue"
+              className="caps"
+              margin="1rem 0">State</Heading>
+            <Text textAlign="left">Variables which define what is happening in your application.</Text>
           </Slide>
           { slides.statefulTriangle }
           {
@@ -248,9 +274,8 @@ export default class Presentation extends Component {
           </Slide>
           <Slide>
             { emoji.couch }
-            <Heading
-              size={3}>
-              Benefits
+            <Heading size={3}>
+              comforts
             </Heading>
           </Slide>
           <Slide>

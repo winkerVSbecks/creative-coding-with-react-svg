@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-const Triangle = function({vertices, color}) {
+function Triangle({vertices, color}) {
 
   const pathData = [
     'M', vertices[0][0],  vertices[0][1],

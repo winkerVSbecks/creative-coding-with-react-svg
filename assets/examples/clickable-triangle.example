@@ -1,6 +1,6 @@
-const ClickableTriangle = ({
+function Triangle({
   vertices, color, delay, handleClick
-}) => {
+}) {
   const pathData = [
     'M', vertices[0][0], vertices[0][1],
     'L', vertices[1][0], vertices[1][1],
@@ -9,8 +9,7 @@ const ClickableTriangle = ({
   ].join(' ');
 
   const styles = {
-    animation:
-     'bounce 1.2s ease both infinite',
+    animation: 'bounce 1.2s ease both infinite',
     transformOrigin: '50% 100%',
     animationDelay: `${ delay }ms`,
   };
