@@ -306,16 +306,16 @@ export default class Presentation extends Component {
               Don't Have to Fight the DOM
             </Heading>
           </Slide>
+          {
+            demoSlide(images.truncation, 'Truncation',
+              'http://winkervsbecks.github.io/truncation')
+          }
           <Slide>
             { emoji.storm }
             <Heading size={4}>
               Re-Render the Whole World
             </Heading>
           </Slide>
-          {
-            demoSlide(images.truncation, 'Truncation',
-              'http://winkervsbecks.github.io/truncation')
-          }
           {
             demoSlide(images.fermatPoint, 'Fermat Point',
               'http://winkervsbecks.github.io/fermat-point')

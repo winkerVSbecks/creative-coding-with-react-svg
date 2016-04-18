@@ -79,7 +79,7 @@ export const overview = (
   <Slide>
     <Heading size={4}>Overview</Heading>
     <List>
-      <ListItem>Backstory</ListItem>
+      <ListItem>Background</ListItem>
       <ListItem>SVG Syntax</ListItem>
       <ListItem>Creating SVG images with React</ListItem>
       <ListItem>Animations</ListItem>
