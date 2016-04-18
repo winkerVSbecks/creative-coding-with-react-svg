@@ -100,6 +100,7 @@ export default class Presentation extends Component {
             <List>
               <ListItem>HTML5 Canvas</ListItem>
               <ListItem>WebGL</ListItem>
+              <ListItem>Game/Physics Engines</ListItem>
               <ListItem>SVG</ListItem>
             </List>
           </Slide>
@@ -380,13 +381,6 @@ export default class Presentation extends Component {
           { codeSlides.clickableTriangle }
           { codeSlides.clickableTriangleContainer }
           { slide(codeSlides.clickableTriangleInteractive) }
-          <Slide>
-            <Heading size={6} textColor="blue">
-              Rosette Generators by Seth Davenport
-            </Heading>
-            <Image src={ images.rosette } width="400"/>
-            <Image src={ images.rosette2 } width="400"/>
-          </Slide>
           {
             demoSlide(images.oam,
               'OAM Site – collaboration with Ainsley Wagoner',

@@ -79,9 +79,9 @@ export const overview = (
   <Slide>
     <Heading size={4}>Overview</Heading>
     <List>
-      <ListItem>Background</ListItem>
+      <ListItem>Backstory</ListItem>
       <ListItem>SVG Syntax</ListItem>
-      <ListItem>Composing SVGs using React</ListItem>
+      <ListItem>Creating SVG images with React</ListItem>
       <ListItem>Animations</ListItem>
       <ListItem>Demos & Features</ListItem>
     </List>

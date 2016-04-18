@@ -5,13 +5,13 @@ const defaultColors = {
   black: clrs.black,
   blue: clrs.blue,
   gray: clrs.gray,
-  red: clrs.red
+  red: clrs.red,
 };
 
 const defaultFonts = {
-  primary: 'Europa',
-  secondary: 'Europa',
-  tertiary: 'monospace'
+  primary: `Europa, Brandon Grotesque`,
+  secondary: `Europa, Brandon Grotesque`,
+  tertiary: 'monospace',
 };
 
 function createTheme() {

@@ -46,7 +46,7 @@ export const reactComponent = (
     code={ require('raw!../assets/examples/react-component.example') }
     ranges={[
       { loc: [0, 2], title: `△ Component` },
-      { loc: [4, 19] },
+      { loc: [4, 17] },
       { loc: [19, 24], note: 'Vertices of The △: 3 (x,y) pairs'  },
       { loc: [6, 12], note: 'Generate the path data'  },
       { loc: [13, 16], note: 'Compose the path' },
@@ -186,7 +186,7 @@ export const clickableTriangle = (
       { loc: [], title: `Clickable Triangle` },
       { loc: [0, 3], note: `handleClick property` },
       { loc: [3, 16], note: `same as before` },
-      { loc: [21, 22], note: `Attach click handler` },
+      { loc: [20, 21], note: `Attach click handler` },
       { loc: [18, 22] },
     ]}/>
 );
