@@ -57,8 +57,6 @@ const images = {
   truncation: require('../assets/truncation.gif'),
   oam: require('../assets/oam.gif'),
   vectorField: require('../assets/vector-field.gif'),
-  rosette: require('../assets/rosette.gif'),
-  rosette2: require('../assets/rosette2.gif'),
   processing: require('../assets/processing.svg'),
 };
 
