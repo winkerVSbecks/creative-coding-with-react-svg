@@ -187,7 +187,7 @@ export const clickableTriangle = (
       { loc: [0, 3], note: `handleClick property` },
       { loc: [3, 16], note: `same as before` },
       { loc: [20, 21], note: `Attach click handler` },
-      { loc: [18, 22] },
+      { loc: [17, 21] },
     ]}/>
 );
 

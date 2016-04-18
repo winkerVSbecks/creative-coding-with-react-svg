@@ -306,7 +306,6 @@ export default class Presentation extends Component {
               Don't Have to Fight the DOM
             </Heading>
           </Slide>
-          { codeSlides.domFight }
           <Slide>
             { emoji.storm }
             <Heading size={4}>
