@@ -91,6 +91,7 @@ export default class Presentation extends Component {
           </Slide>
           <Slide>
             <Image src={ images.processing } width="25%" />
+            <Text>2009</Text>
           </Slide>
           { bgColorSlide('blue', emoji.js) }
           <Slide>
